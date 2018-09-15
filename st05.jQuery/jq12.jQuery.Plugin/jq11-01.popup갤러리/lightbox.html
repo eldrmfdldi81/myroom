@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>LightBox</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h3>연습용 이미지</h3>
+    <a class="light" href="images/image1.jpg"><img src="images/image1.jpg" width="62"></a>
+    <a class="light" href="images/image2.jpg"><img src="images/image2.jpg" width="62"></a>
+    <a class="light" href="images/image3.jpg"><img src="images/image3.jpg" width="62"></a>
+    <hr>
+    <h3>실습용 이미지</h3>
+    <div id="practice">
+        <a class="practice" href="images/image1.jpg"><img src="images/image1.jpg" width="62"></a>
+        <a class="practice" href="images/image2.jpg"><img src="images/image2.jpg" width="62"></a>
+        <a class="practice" href="images/image3.jpg"><img src="images/image3.jpg" width="62"></a>
+    </div>
+
+    <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">&lt;</a>
+        <a class="next">&gt;</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+
+    <hr>
+    <pre>
+1. jquery 플러그인 추가 순서. 순서를 바꾸면 안됨.
+    1-1. jquery. 임포트
+    1-2. jquery 플러그 임포트
+
+2. 자신만의 이미지 플러그인 추가하기
+   2-1. http://plugins.jquery.com/ 에서 사용할 이미지 플러그인 다운로드 받아
+   2-2. 현재 페이지에 플러그인을 추가하고
+   2-3. 이미지 클릭시 해당 플러그인을 사용하여 출력되게 하시오.
+    </pre>
+</body>
+</html>
+
+
+
+
+<link rel="stylesheet" href="css/jquery.lightbox-0.5.css" />
+
+
+
+
+<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+
+

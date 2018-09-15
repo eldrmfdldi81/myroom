@@ -1,0 +1,109 @@
+<!DOCTYPE>
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="accordion.css">
+    <style>
+    * { padding:0; margin:0; }
+    #accordionMenu1 { margin:100px; width:300px; }
+    
+    </style>
+</head>
+
+<body>  
+    <ul class="accordion-menu" id="accordionMenu1">
+        <li data-extension="open">
+            <div class="main-title"><span class="folder"> </span><a>menu1</a></div>
+            <ul class="sub">
+                <li><a>sub1-1</a></li>
+                <li><a>sub1-2</a></li>
+                <li><a>sub1-3</a></li>
+                <li><a>sub1-4</a></li>
+            </ul>
+        </li>       
+        
+        <li>
+            <div class="main-title"><span class="folder"> </span><a>menu2</a></div>
+            <ul class="sub">
+                <li><a>sub2-1</a></li>
+                <li><a>sub2-2</a></li>
+            </ul>
+        </li>   
+        <li data-extension="open">
+            <div class="main-title"><span class="folder"> </span><a>menu3</a> </div>
+            <ul class="sub">
+                <li><a>sub3-1</a></li>
+                <li><a>sub3-2</a></li>
+                <li><a>sub3-3</a></li>
+                <li><a>sub3-4</a></li>
+                <li><a>sub3-5</a></li>
+                <li><a>sub3-6</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="main-title"><span class="folder"> </span><a>menu4</a></div>
+        </li>
+    </ul> 
+    
+    <hr />
+    <xmp>
+
+    step #01
+        - 레이아웃 잡기 
+
+    step #02
+            - 메인메뉴 아이템 선택 처리
+            - 서브 메뉴 패널 처리
+
+            step #02-05
+                - index를 이용해서 서브 메뉴 패녈 열고 닫기 
+
+            step #02-04
+                - 서브 메뉴 패널 열고 닫기에 애니메이션 추가 
+
+            step #02-03
+                - 메인 메뉴 아이템 클릭시 서브 메뉴 패널 열고 닫기 
+
+            step #02-02
+                - 마크업 정보에 따른 서브 메뉴 패널 열고 닫기
+
+            step #02-01
+                - 마크업 정보에 따른 폴더 상태 설정하기
+
+    step #03
+            서브 메뉴 아이템 선택 처리
+
+    step #04
+            외부 선택 기능 추가 
+
+    step #05
+            이벤트 발생 추가
+
+            step #05-02
+                - 선택 이벤트 발생 추가 (select)
+
+            step #05-01
+                - 서브 메뉴 패널 열리고 닫힐때 이벤트 발생 추가 (open, close)
+
+    step #06
+            - 캡슐화 적용하기 		
+
+    step #07
+            - jQuery 플러그인 제작
+
+        step #07-02
+                - 아코디언 메뉴 선택 플러그인 제작
+
+            step #07-01
+                - 아코디언 플러그인 제작  
+
+    </xmp>
+</body>
+</html>
+
+    
+
+
+
+

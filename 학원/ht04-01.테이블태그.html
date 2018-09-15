@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>테이블 태그</title>
+    <style>
+        table, th, td {
+            border:1px solid gray;  /* 표의 테두리 - 1px 회색 실선 */
+            border-collapse:collapse;  /* 표 테두리와 셀 테두리 합치기 */
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        테이블 태그:
+
+        table   :
+        thead :
+        tbody :
+        tfoot :
+        
+        th :
+        tr :
+        td :
+
+        colspan:
+        rowspan:
+		
+		colgroup:
+		col:
+		
+		caption:
+
+    </pre>
+
+    <h2>테이블 태그 실습</h2>
+        
+    <table> 
+            <caption>테이블 테크</caption>
+    </table>   
+    
+    <!-- 컬럼 설정         : colgroup , col -->
+
+        <!-- table header 설정 : thead , tr, th 한번만-->
+
+        <!-- table body 설정   : tbody , tr, td -->
+
+        <!-- table footer 설정 : tfoot, tr, td -->
+        <table> <!-- 표의 데이터를 표시할때 -->
+              
+            <!-- 컬럼 너비 설정할때 사용-->
+           <colgroup>
+            <col style="width:"120">
+            <col width="width: "240">
+        
+        </colgroup>
+           
+            <thead>
+                    <tr>
+                    <th>col-1</th>
+                    <th>col-2</th>
+</tr>
+        <tr>
+            <th>1-1</th>
+            <th>1-2</th>
+        </tr>
+
+    <tfoot>,!--표의 요약을 표시할때사용</tfoot>
+
+        <tr>
+            <th>요약1</th>
+            <th>요약2</th>
+</tr>
+</thead>
+                </tr>
+        </table>
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>우편 번호 검색</title>
+    <style title="currentStyle">
+        .example_input { width: 530px; }
+    </style>
+</head>
+<body>
+
+
+    <p>
+        postcodify 우편 주소 검색 <a href="https://www.poesis.org/postcodify/guide/example" target="_blank"> https://www.poesis.org/postcodify/guide/example </a>
+    </p>
+    <hr>
+
+    <!-- 주소와 우편번호를 입력할 <input>들을 생성하고 적당한 name과 class를 부여한다 -->
+    <div class="graybox" style="line-height:220%">
+        <label for="ex2_input0">우편번호</label>
+        <input type="text" id="ex2_input0" class="example_pcfull" value="" readonly /><button id="postcodify_search_button">검색</button>
+        <br />
+        <label for="ex2_input1">도로명주소</label>
+        <input type="text" id="ex2_input1" class="example_input" value="" readonly />
+        <br />
+        <label for="ex2_input2">상세주소</label>
+        <input type="text" id="ex2_input2" class="example_input" value="" />
+        <br />
+        <label for="ex2_input3">참고항목</label>
+        <input type="text" id="ex2_input3" class="example_input" value="" readonly />
+        <br />
+        <label for="ex2_input4">지번주소</label>
+        <input type="text" id="ex2_input4" class="example_input" value="" readonly />
+        <br />
+        <label for="ex2_input5">영문주소</label>
+        <input type="text" id="ex2_input5" class="example_input" value="" readonly />
+        <br />
+    </div>
+
+    <hr>
+    <p>다음 우편 주소 검색 <a href="http://postcode.map.daum.net/guide" target="_blank">http://postcode.map.daum.net/guide</a> </p>
+
+    <hr>
+    <p>우체국 오픈API를 이용한 우편번호 검색<a href="http://pyonji.tistory.com/1" target="_blank">http://pyonji.tistory.com/1</a> </p>
+</body>
+</html>
+
+
+<!-- jQuery와 Postcodify를 로딩한다 -->

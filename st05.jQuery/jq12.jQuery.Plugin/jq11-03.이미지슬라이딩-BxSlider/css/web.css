@@ -1,0 +1,58 @@
+html {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; border-image: none; font-size: 100%; vertical-align: baseline;
+}
+body {
+	background: none; 
+    margin: 0px; 
+    padding: 0px; 
+    outline: 0px; 
+    border: 0px currentColor; 
+    border-image: none; 
+    font-size: 100%; 
+    vertical-align: baseline; 
+    line-height: 1; 
+    font-size: 12px;
+    
+	color: rgb(0, 0, 0); 
+    font-family: "�������",NG,sans-serif; 
+    background-color: rgb(255, 255, 255);
+}
+div {
+	background: none; 
+    margin: 0px; 
+    padding: 0px; 
+    outline: 0px; 
+    border: 0px currentColor; 
+    border-image: none; 
+    font-size: 100%; 
+    vertical-align: baseline;
+}
+
+a { text-decoration: none;  cursor: pointer; }
+a:hover { text-decoration: none; }
+
+button { cursor: pointer; }
+
+
+
+#container {
+	padding: 0px 0px 0px; width: 100%; margin: 20px;
+}
+.idx_vitop {
+	margin: 0px auto; width: 1000px; height: 420px;
+}
+.idx_vitop .v1 {
+	height: 438px; overflow: hidden;
+}
+.idx_vitop .bx-pager {
+	margin: 10px 0px 0px; text-align: center;
+}
+.idx_vitop .bx-pager div {
+	padding: 0px 9px 0px 0px; display: inline-block;
+}
+.idx_vitop .bx-pager div a {
+	background: url("./btn_rolling.jpg") no-repeat 0px 0px; width: 13px; height: 13px; text-indent: -9999px; display: inline-block;
+}
+.idx_vitop .bx-pager div .active {
+	background-position: 0px -20px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <pre>
+        목록 태그:
+        ul/li  :
+        ol/li  :
+        dl/dt/dd :
+    </pre>
+
+    <h2>기호 목록 태그 : ul</h2>
+    <ul>
+        <!-- 기호 : disc -->
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+    </ul>
+    <ul style="list-style-type: square;">
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+    </ul>
+
+    <h2>번호 목록 태그 : ol</h2>
+    <ol>
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+    </ol>
+
+    <h2>번호 목록 태그 : ol</h2>
+    <ol style="list-style-type: lower-roman">        
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+    </ol>
+
+
+    <h2>정의 목록: dl</h2>
+    <dl>
+        <dt>과일</dt>
+        <dd>사과</dd> 
+        <dd>바나나</dd>  
+        <dd>오렌지</dd> 
+    </dl>
+
+    <h2>번호 목록 태그 + 정의 목록의 결합</h2>
+    <ol>
+        <li>채소</li>
+        <li>고기</li>
+        <li>
+            <dl>
+                <dt>목록</dt>
+                <dd>사과</dd>
+                <dd>바나나</dd>
+                <dd>오렌지</dd>
+            </dl>
+        </li>
+    </ol>
+
+,h2>번호 목록 태그 + 정의 목록의 결합</h2>
+<dl>
+        <dt>목록</dt>
+        <dd>채소</dd>
+        <dd>고기</dd>
+        <dd>과일
+            <ol>
+                <li>사과</li>
+
+            </ol>
+        </dd>
+</dl>
+
+<h2>기호 목록(ul) 태그 + 기호(ul) 목록 태그 결합</h2>
+<!--
+    회사소개
+        인사말
+        오시는길
+    사업분야
+        디자인
+        개발
+    BBS
+        공지사항    
+        QnA
+-->        
+
+
+<h1>회사소개</h1>
+<ul style="list-style-type: square;">
+    <li>회사소개
+        <ul>
+            <li>인사말</li>
+            <li>오시는길</li> 
+        </ul>
+    
+    <li>사업분야</li>
+        <ul>
+            <li>디자인</li>
+            <li>개발</li>
+        </ul>
+    <li> BBS</li>
+        <ul>
+            <li>공지사항</li>
+            <li>QnA</li>
+        </ul>
+    
+</ul>
+</body>
+</html>

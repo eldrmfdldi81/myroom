@@ -1,0 +1,108 @@
+<!DOCTYPE>
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="barmenu.css">
+    <style>
+        * {padding:0; margin:0; }
+        /*#barMenu1 {position:relative; left:100px; top:100px; width:700px; }*/
+    </style>
+</head>
+
+<body>  
+    <div class="bar-menu" id="barMenu1"> 
+         <ul class="menu-body">
+            <li>홈</li>
+            <li>강좌</li>
+            <li>동영상</li>
+            <li>프로젝트</li>
+            <li>세미나</li>
+            <li>갤러리</li>
+        </ul>
+        <div class="bar"> </div>
+    </div>    
+    
+    <div class="bar-menu" id="barMenu2"> 
+         <ul class="menu-body">
+            <li>홈</li>
+            <li>강좌</li>
+            <li>동영상</li>
+            <li>프로젝트</li>
+            <li>세미나</li>
+            <li>갤러리</li>
+        </ul>
+        <div class="bar"> </div>
+    </div>
+    
+    <hr />
+
+    <pre>
+
+     step #01
+      - 메뉴 구조 잡기
+          - 레이아웃 구조 잡기
+          - 선택 처리 테스트
+          - 선택 위치로 bar이동 시키기
+              - 이동 위치 : 선택 메뉴 아이템 위치 + margin-left
+
+
+     step #02
+          - 오버 메뉴 아이템 구현 하기
+          step #02-04
+              - bar 이동 처리
+
+          step #02-03
+              - 메뉴 영역 밖으로 나간 경우
+
+          step #02-02
+              - 오버 효과 구현
+          step #02-01 : 클래스 만들기
+              - BarMenu클래스 만들기
+                  - BarMenu기본 구조 설명하기
+                  - 기본 규칙 설명 하기
+                      - BarMenu생성자에 사용할 프로퍼티 만들기
+                      - init() 요소 구하기및 초기화
+                      - initEvent() 이벤트 초기화
+
+
+     step #06
+          - jQuery 플러그인 제작
+
+          step #06-03
+              - barMenu 선택처리 플러그인 만들기
+
+          step #06-02
+              - 멀티 바 메뉴 실행 테스트
+          step #06-01
+              - barMenu 플러그인 만들기
+
+     step #05
+          - 캡슐화 처리
+
+     step #04
+          - 선택 메뉴 아이템 변경 이벤트 발생
+
+     step #03
+          - 선택 메뉴 아이템 구현 하기
+
+          step #03-04. 시작시 n번재 메뉴 아이템 선택
+
+          step #03-03. 재선택 처리
+              5) 마우스 포인터가 메뉴 밖으로 나갔을 때, 선택 메뉴 아이템이 있는 경우
+          step #03-02. 선택 메뉴 아이템 처리2
+              선택 상태 유지 시키기
+
+          step #03-01. 선택 메뉴 아이템 처리1
+               6. 메뉴 아이템을 클릭하는 경우, 기존 선택 메뉴 아이템이 없는 경우
+               7) 메뉴 아이템을 클릭하는 경우, 기존 선택 메뉴 아이템이 있는 경우
+
+    </pre>
+    
+</body>
+</html>
+
+
+
+
+
