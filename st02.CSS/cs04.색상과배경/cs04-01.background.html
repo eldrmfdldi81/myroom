@@ -1,9 +1,165 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>배경 이미지</title>
+
+    <style>
+        body {
+            background-image: url('images/bg1.png');
+            background-repeat: no-repeat;
+            background-repeat: repeat-x;
+            background-repeat: repeat-y;
+            background-repeat: repeat;
+        }
+
+        #clip>div {
+            border: 15px dotted #000000;
+            padding: 35px;
+            /* 테두리 안쪽 */
+            margin: 30px;
+            /* 테두리 바깥 여백 */
+            background-color: aqua;
+            widows: 200px;
+            float: left;
+            /* clear */
+        }
+
+        #clip>.bg1 {
+            background-clip: border-box;
+        }
+
+        /*content + padding + border. 기본값 기본박스 */
+
+        #clip>.ba2 {
+            background-clip: padding-box;
+        }
+
+        /*content + padding + */
+
+        #clip>.ba3 {
+            background-clip: content-box;
+        }
+
+        /*content */
+
+        #clip::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        #color> {
+            clear: both;
+        }
+
+        #color {
+            background-color: aqua;
+
+        }
+
+        #color>div {
+            background-color: white;
+            border: 1px solid:black;
+            margin-right: 50px;
+
+        }
+
+        #orijin>div {
+            border: 15px dotted r padding: 35px;
+            /* 테두리 안쪽 */
+            margin: 30px;
+            /* 테두리 바깥 여백 */
+            background-color: aqua;
+            widows: 200px;
+            float: left;
+            /* clear 반드시 적용 */
+
+            background-image: url('images/bg5.png') background-repeat: no-repeat;
+
+
+        }
+
+        #orijin>.bg1 {
+            background-origin: border-box;
+        }
+
+        #orijin>.bg2 {
+            background-origin: padding-box;
+        }
+
+        /* 기본값 */
+
+        #orijin>.bg3 {
+            background-origin: content-box;
+        }
+
+        #orijin::after {
+            content: '';
+            display: block;
+            clear: both;
+
+        }
+
+        #position>div {
+            background-image: url('../images/bg2.jpg') width: 700px;
+            height: 150px;
+            background-repeat: no-repeat;
+            /* top padding150px */
+
+            padding-top: 150px;
+
+            /* bottom margin:20px */
+            margin-bottom: 20px;
+
+        }
+
+        #position>.bg1 {
+            background-position: left top;
+        }
+
+        /*기본값 */
+        #position>.bg2 {
+            background-position: conter;
+        }
+
+        #position>.bg3 {
+            background-position: bottom;
+        }
+
+        #position>.bg4 {
+            background-position: right bottom;
+        }
+
+
+
+        #size>div {
+
+            width: 300px;
+            height: 300px;
+            background-image: url('../images/bg4.jpg');
+            border: 1px solid#000000;
+            background-repeat: no-repeat;
+            float: left;
+            margin: 30px;
+        }
+
+        #size .bg2 {
+            background-size: auto
+        }
+
+        #size .bg3 {
+            background-size: width:200px;
+            height: 150px;
+        }
+
+        #size .bg4 {
+            background-size: 60%; 40%
+        }
+    </style>
 </head>
+
 <body>
     <div id="clip">
         <h2>background-clip</h2>
@@ -42,7 +198,7 @@
             <p>초콜릿은 카카오 콩을 재료로 가공한 식품이다.
                 숙성한 카카오 콩을 볶은 뒤 이를 갈아서 만든 카카오 매스와 지방 성분만으로 만들어진 코코아 버터를 혼합하여 만드는데,
                 설탕 등의 다른 재료를 더 넣어 만들기도 한다.
-            카카오 매스의 함량에 따라 다크 초콜릿, 밀크 초콜릿, 화이트 초콜릿으로 구분한다.</p>
+                카카오 매스의 함량에 따라 다크 초콜릿, 밀크 초콜릿, 화이트 초콜릿으로 구분한다.</p>
         </div>
     </div>
 
@@ -85,7 +241,7 @@
                 숙성한 카카오 콩을 볶은 뒤 이를 갈아서 만든 카카오 매스와
                 지방 성분만으로 만들어진 코코아 버터를 혼합하여 만드는데,
                 설탕 등의 다른 재료를 더 넣어 만들기도 한다.
-            카카오 매스의 함량에 따라 다크 초콜릿, 밀크 초콜릿, 화이트 초콜릿으로 구분한다.</p>
+                카카오 매스의 함량에 따라 다크 초콜릿, 밀크 초콜릿, 화이트 초콜릿으로 구분한다.</p>
         </div>
         <div class="bg2">
             <h1>초콜릿(Chocolate)</h1>
@@ -109,6 +265,8 @@
         </div>
     </div>
 
+
+
     <div id="size">
         <h2>background-size</h2>
         <div class="bg1">배경 이미지 사이즈 : auto</div>
@@ -120,4 +278,5 @@
     </div>
 
 </body>
-</html>
+
+</html>
